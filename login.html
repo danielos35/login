@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <!-- Principal class -->
+
+    <div class="container">
+
+        <!-- Login / Register -->
+        <div class="blueBg">
+
+            <div class="box signin">
+                <h2> ¿Tienes cuenta? </h2>
+                <button class="signinBtn">Ingresar</button>
+            </div>
+            <div class="box signup">
+                <h2>No tengo cuenta, ¡Quiero registrarme!</h2>
+                <button class="signupBtn">Registrarme </button>
+            </div>
+
+        </div>
+
+        <!-- Form in -->
+        <div class="formBx">
+            <div class="form signinForm">
+                <form action="">
+                    <h3>Login</h3>
+                    <div class="icon">
+                        <div class="imgIcon">
+
+                            <img src="icons/login/user.png" alt="">
+                        </div>
+                        <input type="text" placeholder="Correo">  
+                    </div>
+                    <div class="icon">
+                        <!-- <img src="icons/login/padlock.png" alt=""> -->
+                        <div class="imgIcon">
+                            <img src="icons/login/pass.png" alt="">
+                        </div>
+                        <input type="password" placeholder="Contraseña">
+                        
+                    </div>
+                    <input type="submit" value="login">
+                    
+                </form>
+            </div>
+            
+            <!-- Register -->
+            <div class="form signupForm">
+                <form action="">
+                    <h3>Registro</h3>
+
+                    <div class="icon">
+                        <div class="imgIcon">
+                            <img src="icons/login/user.png" alt="">
+                        </div>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+
+                    <div class="icon">
+                        <div class="imgIcon">
+                            <img src="icons/login/user.png" alt="">
+                        </div>
+
+                        <input type="text" placeholder="Apellido">
+                    </div>
+
+                    <div class="icon">
+                        <div class="imgIcon">
+                            <img src="icons/login/user.png" alt="">
+                        </div>     
+                        <input type="tel" name="" id="" placeholder="tel">
+                    </div>
+
+                    <div class="icon">
+                        <div class="imgIcon">
+                            <img src="icons/login/user.png" alt="">
+                        </div> 
+                        <input type="text" placeholder="Mail">
+                    </div>
+                    
+                    
+                    <div class="icon">
+                        <div class="imgIcon">
+                            <img src="icons/login/user.png" alt="">
+                        </div>  
+                       <input type="password" placeholder="Contraseña">
+                    </div>
+                    <input type="submit" value="registrate">
+                    
+                </form>
+            </div>
+            
+        </div>
+
+        <!-- Form out -->
+     
+
+    </div>
+
+    <script>
+        const signinBtn = document.querySelector('.signinBtn');
+        const signupBtn = document.querySelector('.signupBtn');
+        const formBx = document.querySelector('.formBx'); 
+        const body = document.querySelector('body'); 
+
+
+        signupBtn.onclick = function(){
+            formBx.classList.add('active');
+            body.classList.add('active'); 
+        }
+        signinBtn.onclick = function(){
+            formBx.classList.remove('active'); 
+            body.classList.remove('active'); 
+        }
+
+        
+
+    </script>
+</body>
+</html>
